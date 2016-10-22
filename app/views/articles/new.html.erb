@@ -1,0 +1,56 @@
+<h1>this is NEW PAGE</h1>
+<%= form_for @article do |f| %>
+  <%= f.check_box :title, {}, 'yes', 'no' %>
+  <%= f.check_box :title, {disabled:true}, 'yes', 'no' %>
+
+  <%= f.color_field :title, value:'#ff0000' %>
+
+  <%= f.date_field :title, class:'special_input' %>
+
+  <%= f.datetime_field :title, class:'special_input' %>
+
+  <%= f.datetime_local_field :title, class:'special_inputl',value:'this is yes' %>
+
+  <%= f.email_field :title, class:'special_input',value:'linhaixiaohuo@163.com' %>
+
+  <%= f.fields_for :title,nil, class:'special_input' do %>
+    <%= f.color_field :tile, value:'#ff0000' %>
+  <% end %>
+
+  <%= f.file_field :title, class:'special_input' %>
+
+  <%= f.hidden_field :title, class:'special_input' %>
+
+  <%= f.label :title, value:'this is label' %>
+
+  <%= f.month_field :title, class:'special_input' %>
+
+  <%= f.number_field :title, class:'special_input' %>
+
+  <%= f.password_field :title, class:'special_input' %>
+
+  <%= f.phone_field :title, class:'special_input' %>
+
+  <%= f.radio_button :title, 'yes', class:'special_input' %>
+
+  <%= f.radio_button :title, 'no', class:'special_input',disabled:true %>
+
+  <%= f.range_field :title, class:'special_input' %>
+
+  <%= f.search_field :title, class:'special_input' %>
+
+  <%= f.telephone_field :title, class:'spcial_input' %>
+
+  <%= f.text_area :title, class:'special_input', size:'25*25' %>
+
+  <%= f.text_field :title, class:'special_input' %>
+
+  <%= f.time_field :title, class:'special_input' %>
+
+  <%= f.url_field :title, class:'special_input' %>
+
+  <%= f.week_field :title, class:'special_input' %>
+
+
+
+<% end %>
